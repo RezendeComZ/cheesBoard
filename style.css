@@ -1,5 +1,8 @@
 .tabuleiro {
+    background-color: honeydew;
     display: flex;
+    width: 400px;
+    height: 400px;
 }
 
 .preto {
