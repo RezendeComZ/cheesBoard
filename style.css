@@ -1,0 +1,15 @@
+.tabuleiro {
+    display: flex;
+}
+
+.preto {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+}
+
+.branco {
+    background-color: rgb(218, 218, 218);
+    height: 50px;
+    width: 50px;
+}
