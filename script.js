@@ -1,18 +1,18 @@
-const tabuleiro = document.querySelector(".tabuleiro")
+const board = document.querySelector(".board")
 
 function div (classHTML, content = "") {
     return `<div class=${classHTML}>${content}</div>`
 }
 
-const preto = div("preto")
-const branco = div("branco")
-const duas = preto + branco
-const sete = duas.repeat(3) + preto
+const black = div("black")
+const white = div("white")
+const two = black + white
+const seven = two.repeat(3) + black
 
-for (let numeroLinha = 0; numeroLinha < 8; numeroLinha++) {
-    if (tabuleiro.childElementCount % 2) {
-        tabuleiro.innerHTML +=  div('linha', sete + branco)
+for (let line = 0; line < 8; line++) {
+    if (board.childElementCount % 2) {
+        board.innerHTML +=  div('line', seven + white)
     } else {
-        tabuleiro.innerHTML += div('linha', branco + sete)
+        board.innerHTML += div('line', white + seven)
     }
 }
